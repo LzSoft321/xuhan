@@ -12,6 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java-basics" target="1.7" />
+      <module name="javabasics" target="1.7" />
       <module name="netty" target="1.7" />
     </bytecodeTargetLevel>
   </component>
