@@ -1,4 +1,4 @@
-package pers.xuhan.java.designpattern.builderpattern;
+package pers.xuhan.java.designpattern.builderpattern.属性建造者模式;
 
 
 /**
