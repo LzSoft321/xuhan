@@ -2,7 +2,7 @@ package pers.xuhan.java.designpattern.decoratorpattern;
 
 /**
  * @Filename: CornDecorator.java
- * @Description:
+ * @Description: 装饰者类
  * @Version: 1.0
  * @Author: han.xu
  * @Email: han.xu@paat.com
