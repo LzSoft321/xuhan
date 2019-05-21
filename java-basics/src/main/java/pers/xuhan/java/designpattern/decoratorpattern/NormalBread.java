@@ -1,5 +1,13 @@
 package pers.xuhan.java.designpattern.decoratorpattern;
 
+/**
+ * @Filename: NormalBread.java
+ * @Description: 被装饰者类
+ * @Version: 1.0
+ * @Author: han.xu
+ * @Email: han.xu@paat.com
+ * @date: 2019/5/21 17:25
+ */
 public class NormalBread implements IBread{
 
     @Override
