@@ -1,9 +1,5 @@
 package pers.xuhan.java.java基础.注解;
 
-import pers.xuhan.java.javabasic.注解.FruitColor;
-import pers.xuhan.java.javabasic.注解.FruitName;
-import pers.xuhan.java.javabasic.注解.FruitProvider;
-
 /**
  * 注解使用
  */

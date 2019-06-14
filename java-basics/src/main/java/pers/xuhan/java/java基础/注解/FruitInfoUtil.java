@@ -1,8 +1,5 @@
 package pers.xuhan.java.java基础.注解;
 
-import pers.xuhan.java.javabasic.注解.FruitColor;
-import pers.xuhan.java.javabasic.注解.FruitName;
-import pers.xuhan.java.javabasic.注解.FruitProvider;
 
 import java.lang.reflect.Field;
 
@@ -19,13 +16,13 @@ public class FruitInfoUtil {
         Field[] fields = clazz.getDeclaredFields();
         
         for(Field field :fields){
-            if(field.isAnnotationPresent(pers.xuhan.java.javabasic.注解.FruitName.class)){
-                pers.xuhan.java.javabasic.注解.FruitName fruitName = (pers.xuhan.java.javabasic.注解.FruitName) field.getAnnotation(FruitName.class);
+            if(field.isAnnotationPresent(FruitName.class)){
+                FruitName fruitName = (FruitName) field.getAnnotation(FruitName.class);
                 strFruitName=strFruitName+fruitName.value();
                 System.out.println(strFruitName);
             }
-            else if(field.isAnnotationPresent(pers.xuhan.java.javabasic.注解.FruitColor.class)){
-                pers.xuhan.java.javabasic.注解.FruitColor fruitColor= (pers.xuhan.java.javabasic.注解.FruitColor) field.getAnnotation(FruitColor.class);
+            else if(field.isAnnotationPresent(FruitColor.class)){
+                FruitColor fruitColor= (FruitColor) field.getAnnotation(FruitColor.class);
                 strFruitColor=strFruitColor+fruitColor.fruitColor().toString();
                 System.out.println(strFruitColor);
             }
