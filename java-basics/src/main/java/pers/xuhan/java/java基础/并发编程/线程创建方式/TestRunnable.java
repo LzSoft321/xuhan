@@ -1,6 +1,5 @@
 package pers.xuhan.java.java基础.并发编程.线程创建方式;
 
-import pers.xuhan.java.javabasic.并发编程.线程创建方式.RunnableDemo;
 
 /**
  * @Filename: TestRunnable.java
@@ -15,7 +14,7 @@ public class TestRunnable {
 
     public static void main(String[] args) {
 
-        pers.xuhan.java.javabasic.并发编程.线程创建方式.RunnableDemo runnableDemo=new RunnableDemo();
+        RunnableDemo runnableDemo=new RunnableDemo();
         Thread thread=new Thread(runnableDemo);
         thread.start();
     }

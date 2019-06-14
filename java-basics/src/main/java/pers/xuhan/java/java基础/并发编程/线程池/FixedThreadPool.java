@@ -1,7 +1,5 @@
 package pers.xuhan.java.java基础.并发编程.线程池;
 
-import pers.xuhan.java.javabasic.并发编程.线程池.ThreadPoolDemo;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -15,7 +13,7 @@ import java.util.concurrent.Executors;
  */
 public class FixedThreadPool {
     public static void main(String[] args) {
-        pers.xuhan.java.javabasic.并发编程.线程池.ThreadPoolDemo tp = new pers.xuhan.java.javabasic.并发编程.线程池.ThreadPoolDemo();
+        ThreadPoolDemo tp = new ThreadPoolDemo();
         //1.创建线程池
         ExecutorService pool = Executors.newFixedThreadPool(5);
         //2.为线程池中的线程分配任务

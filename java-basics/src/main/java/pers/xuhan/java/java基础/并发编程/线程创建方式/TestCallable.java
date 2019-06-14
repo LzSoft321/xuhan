@@ -1,7 +1,5 @@
 package pers.xuhan.java.java基础.并发编程.线程创建方式;
 
-import pers.xuhan.java.javabasic.并发编程.线程创建方式.CallableDemo;
-
 import java.util.concurrent.FutureTask;
 
 /**
@@ -14,7 +12,7 @@ import java.util.concurrent.FutureTask;
  */
 public class TestCallable {
     public static void main(String[] args){
-        pers.xuhan.java.javabasic.并发编程.线程创建方式.CallableDemo callableDemo = new pers.xuhan.java.javabasic.并发编程.线程创建方式.CallableDemo();
+        CallableDemo callableDemo = new CallableDemo();
         //执行callable方式，需要FutureTask实现类的支持，用来接收运算结果
         FutureTask<Integer> result = new FutureTask<>(callableDemo);
         new Thread(result).start();
