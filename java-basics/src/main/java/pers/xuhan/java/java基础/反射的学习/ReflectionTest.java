@@ -1,7 +1,6 @@
 package pers.xuhan.java.java基础.反射的学习;
 
 import org.junit.jupiter.api.Test;
-import pers.xuhan.java.javabasic.反射的学习.Person;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -13,7 +12,7 @@ public class ReflectionTest {
        Class clazz = null;
        
        //1.得到Class对象
-       clazz = pers.xuhan.java.javabasic.反射的学习.Person.class;
+       clazz = Person.class;
 
         //2.返回字段的数组
         Field[] fields = clazz.getDeclaredFields();
@@ -26,12 +25,12 @@ public class ReflectionTest {
         Class clazz = null;
 
         //1.通过类名
-        clazz = pers.xuhan.java.javabasic.反射的学习.Person.class;
+        clazz = Person.class;
 
 
         //2.通过对象名
         //这种方式是用在传进来一个对象，却不知道对象类型的时候使用
-        pers.xuhan.java.javabasic.反射的学习.Person person = new pers.xuhan.java.javabasic.反射的学习.Person();
+        Person person = new Person();
         clazz = person.getClass();
         //上面这个例子的意义不大，因为已经知道person类型是Person类，再这样写就没有必要了
         //如果传进来是一个Object类，这种做法就是应该的

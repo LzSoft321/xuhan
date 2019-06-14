@@ -1,7 +1,5 @@
 package pers.xuhan.java.java基础.并发编程.读写锁;
 
-import pers.xuhan.java.javabasic.并发编程.读写锁.ReadWriterLockDemo;
-
 /**
  * @Filename: TestReadWriterLock.java
  * @Description: 读写锁
@@ -12,7 +10,7 @@ import pers.xuhan.java.javabasic.并发编程.读写锁.ReadWriterLockDemo;
  */
 public class TestReadWriterLock {
     public static void main(String[] args){
-           pers.xuhan.java.javabasic.并发编程.读写锁.ReadWriterLockDemo rw = new pers.xuhan.java.javabasic.并发编程.读写锁.ReadWriterLockDemo();
+           ReadWriterLockDemo rw = new ReadWriterLockDemo();
            new Thread(new Runnable() {//一个线程写
                @Override
                public void run() {
