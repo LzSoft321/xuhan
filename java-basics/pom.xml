@@ -15,6 +15,11 @@
             <artifactId>mail</artifactId>
             <version>1.4.7</version>
         </dependency>
+        <dependency>
+            <groupId>com.paat</groupId>
+            <artifactId>paat-framework-core</artifactId>
+            <version>1.0.2-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     
